@@ -12,7 +12,7 @@ const NFTDropPage = () => {
       <div className="bg-gradient-to-br from-cyan-800 to-rose-500 lg:col-span-4">
         <div className="flex flex-col items-center justify-center py-2 lg:min-h-screen">
           <div className="bg-gradient-to-br from-yellow-400 to-purple-600 p-2 rounded-xl">
-            <Image
+            <img
               className="w-44 rounded-xl object-cover lg:h-96 lg:w-72"
               src="https://links.papareact.com/8sg"
               alt="ape nft"
@@ -52,7 +52,7 @@ const NFTDropPage = () => {
           </p>
         )}
         <div className="mt-10 flex flex-1 flex-col items-center space-y-6 text-center lg:space-y-0 lg:justify-center">
-          <Image
+          <img
             className="w-80 object-cover pb-10 lg:h-40"
             src="https://links.papareact.com/bdy"
             alt="apes collection"

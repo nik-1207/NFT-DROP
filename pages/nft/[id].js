@@ -20,7 +20,7 @@ const NFTDropPage = () => {
           </div>
 
           <div className="space-y-2 p-5 text-center">
-            <h1 className="text-4xl font-bold text-white">PAPAFAM Apes</h1>
+            <h1 className="text-4xl font-bold text-white">DEMO Apes</h1>
             <h2 className="text-xl text-gray-300">
               A demo collection of Apes who live and breathe React!
             </h2>

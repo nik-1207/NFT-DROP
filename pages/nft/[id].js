@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { useAddress, useDisconnect, useMetamask } from "@thirdweb-dev/react";
 
 const NFTDropPage = () => {
@@ -11,7 +12,7 @@ const NFTDropPage = () => {
       <div className="bg-gradient-to-br from-cyan-800 to-rose-500 lg:col-span-4">
         <div className="flex flex-col items-center justify-center py-2 lg:min-h-screen">
           <div className="bg-gradient-to-br from-yellow-400 to-purple-600 p-2 rounded-xl">
-            <img
+            <Image
               className="w-44 rounded-xl object-cover lg:h-96 lg:w-72"
               src="https://links.papareact.com/8sg"
               alt="ape nft"
@@ -46,12 +47,12 @@ const NFTDropPage = () => {
         <hr className="my-2 border" />
         {address && (
           <p className="text-center text-sm text-rose-400">
-            You're logged in with wallet {address.slice(0, 5)}...
+            You&apos;re logged in with wallet {address.slice(0, 5)}...
             {address.slice(address.length - 5)}
           </p>
         )}
         <div className="mt-10 flex flex-1 flex-col items-center space-y-6 text-center lg:space-y-0 lg:justify-center">
-          <img
+          <Image
             className="w-80 object-cover pb-10 lg:h-40"
             src="https://links.papareact.com/bdy"
             alt="apes collection"
@@ -59,7 +60,9 @@ const NFTDropPage = () => {
           <h1 className="text-3xl font-bold lg:text-5xl lg:font-extrabold">
             The Nik-1207 NFT Drop website
           </h1>
-          <p className="pt-2text-xl text-green-500">13 /21 Nft's claimed</p>
+          <p className="pt-2text-xl text-green-500">
+            13 /21 Nft&apos;s claimed
+          </p>
         </div>
         <button className="h-16 w-full bg-red-600 text-white rounded-full mt-10 font-bold">
           Mint Nft (0.01 ETH)

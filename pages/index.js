@@ -26,7 +26,7 @@ export default function Home({ collections }) {
       <main className="bg-slate-100 p-10 shadow-xl shadow-rose-400/20">
         <div className="grid space-x-3 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
           {collections.map((collection) => (
-            <Link href={`nft/${collection.slug.current}`}>
+            <Link key={collection._id} href={`nft/${collection.slug.current}`}>
               <div className="flex flex-col items-center cursor-pointer transition-all duration-200 hover:scale-105">
                 <img
                   className="h-96 w-60 rounded-2xl object-cover"
@@ -67,6 +67,8 @@ export const getServerSideProps = async () => {
   }`;
 
   const collections = await sanityClient.fetch(query);
+
+  console.log(collections);
 
   return {
     props: { collections },
